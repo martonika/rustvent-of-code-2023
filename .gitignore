@@ -18,5 +18,8 @@ Cargo.lock
 
 /target
 
-# Inputs are now wanted
+# Inputs are not wanted
 **/input.txt
+
+# Vscode stuff
+.vscode/
