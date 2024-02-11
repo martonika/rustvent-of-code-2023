@@ -113,10 +113,8 @@ pub fn solve_2(input: &str) -> u64 {
                 None => 0,
             };
             // Non-joker match
-            let mut hand_type;
-            println!("Hand: {hand}");
+            let hand_type;
             if jokers == 0 {
-                println!("No J");
                 hand_type = match type_helper.len() {
                     1 => 7, // Five of a kind
                     2 => type_match_2(&type_helper),
@@ -126,7 +124,6 @@ pub fn solve_2(input: &str) -> u64 {
                     _ => unreachable!(),
                 };
             } else {
-                println!("{jokers} J");
                 hand_type = match type_helper.len() {
                     // Five of a kind (x of the same + J)
                     0 => 7, // 5 jokers
